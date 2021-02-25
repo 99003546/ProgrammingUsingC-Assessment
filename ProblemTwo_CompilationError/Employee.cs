@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,5 +30,9 @@ namespace ProblemTwo_CompilationError
             return Math.Abs(monthsApart);
         }
 
+        public static implicit operator Employee(List<Manager> v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
